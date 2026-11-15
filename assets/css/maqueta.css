@@ -81,3 +81,67 @@ header, nav, main, aside, footer {
         --alto: 300px;
     }
 }
+/*RESPONSIVE*/
+/* Ordenador a partir de 1200px: contenido y aside en dos columnas */
+main {
+    display: flex;
+    gap: 1.5em;
+    padding: 1em;
+}
+main section {
+    flex: 1;
+}
+aside {
+    flex: 0 0 28%;
+    align-self: flex-start;
+}
+
+/* Tablet de 700px a 1199px: una sola columna */
+@media (max-width: 1199px) {
+    main {
+        flex-direction: column;
+    }
+    aside {
+        flex: none;
+        align-self: auto;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Móvil hasta 699px: menú en columna y no fijo */
+@media (max-width: 699px) {
+    body {
+        padding-top: 0;
+    }
+    nav {
+        position: static;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 0.3em 1em;
+    }
+    nav a {
+        text-align: center;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    th, td {
+        padding: 0.4em;
+        font-size: 0.85em;
+    }
+    img, iframe {
+        max-width: 100%;
+    }
+}
