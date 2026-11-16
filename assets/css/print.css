@@ -1,0 +1,6 @@
+header, nav, aside, footer, .whatsapp-fijo {
+    display: none;
+}
+body {
+    padding-top: 0;
+}
