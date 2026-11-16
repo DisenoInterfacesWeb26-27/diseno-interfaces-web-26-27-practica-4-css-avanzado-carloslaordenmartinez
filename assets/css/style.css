@@ -371,3 +371,17 @@ a[href$=".pdf"]::after {
     content: url("../images/pdf.png");
     margin-left: 0.3em;
 }
+.contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta {
+    width: 15em;
+    margin: 0.5em;
+    padding: 1em;
+    background-color: #72E6DD;
+    border: 2px solid #0F5C73;
+    border-radius: 12px;
+}
