@@ -358,3 +358,10 @@ aside {
         max-width: 100%;
     }
 }
+img:not([alt]) {
+    border: 3px solid red;
+}
+a[href$=".pdf"]::after {
+    content: url("../images/pdf.png");
+    margin-left: 0.3em;
+}
